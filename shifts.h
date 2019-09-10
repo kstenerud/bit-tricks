@@ -1,5 +1,7 @@
 #pragma once
 
+#include <limits.h>
+
 // Logical shift left by size - 1
 //
 #define lsl_max(X) ((X) << (sizeof(X) * CHAR_BIT - 1))

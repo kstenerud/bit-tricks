@@ -1,7 +1,6 @@
 #pragma once
 
-#include "is_gt_0.h"
-#include "is_zero.h"
+#include "comparisons.h"
 
 // Returns 1 if x is a power of 2
 //

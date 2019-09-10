@@ -6,6 +6,6 @@
 //
 static inline int absolute_value(int x)
 {
-    const int mask = asr_max(x);
+    const int mask = asr_max(int, x);
     return (x + mask) ^ mask;
 }
