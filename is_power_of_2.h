@@ -6,5 +6,5 @@
 //
 static inline int is_power_of_2(int x)
 {
-    return is_gt_0(x) & is_zero(x & (x - 1));
+    return is_gt_0(x) & is_zero_0n1(x & (x - 1));
 }

@@ -6,6 +6,6 @@
 //
 static inline int get_bytes_required_for_bits(const int bits)
 {
-    const int extra_byte = is_nonzero(bits & 7) & 1;
+    const int extra_byte = is_nonzero_0n1(bits & 7) & 1;
     return (bits >> 3) + extra_byte;
 }

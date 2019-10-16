@@ -1,12 +1,12 @@
 #pragma once
 
-#include <limits.h>
+#include "bitsize.h"
 
 // Get the maximum amount that a value or type can be shifted.
 // This is the size of X in bits - 1, so for example, 7 for int8,
 // 15 for int16, 31 for int32, etc.
 //
-#define MAX_SHIFT_COUNT(X) ( (sizeof(X) * CHAR_BIT - 1) )
+#define MAX_SHIFT_COUNT(X) (bitsizeof(X) - 1)
 
 // Logical shift left X by BITS
 //
